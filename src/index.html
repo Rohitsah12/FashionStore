@@ -1,17 +1,54 @@
 <!DOCTYPE html>
-<html lang="en-IN">
-<head>   
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <title>FashionStore</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style type="text/css">
+        header{
+            display: flex;
+            justify-content: space-around;
+            font-size: 10px;
+            font-family:Arial;
+        }
+        .bi:hover{
+            color:red;
+        }
+        .cart-name{
+            background-color: red;
+            color:white;
+            border-radius: 50%;
+        }
+        
         
     </style>
 </head>
 <body>
-    
-
-
-    
+    <header>
+    <div>
+        <div>
+            Shopper.
+        </div>
+    </div>
+    <div>
+        <nav>
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs</span>
+        </nav>      
+    </div>
+    <div>
+        <nav>
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"><span class="cart-name">2</span></span>
+        </nav>
+    </div>
+</header>
 </body>
 </html>
