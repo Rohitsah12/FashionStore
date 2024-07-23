@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dl{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+
+        }
+        dt{
+            background-color: black;
+            color: white;
+            margin-bottom: 5px;
+            padding: 5px;
+            width: 200px;
+        }
+        dd{
+            background-color: gray;
+            color: black;
+            margin-bottom: 5px;
+            padding: 5px;
+            width: 300px;
+        }
+        fieldset{
+            margin-bottom: 20px;
+            background-image: url(../public/images/banner.jpg);
+            background-size: cover;
+            border-radius: 25px;
+            width: 200px;
+            box-shadow: 5px 5px 5px black;
+        }
+        
+        legend{
+            text-align: center;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        .personal-details{
+            box-shadow: 5px 5px 5px red;
+        }
+
+        .contact-details{
+            box-shadow: 3px 3px 3px green;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- <dl>
+        <dt>HTML </dt>
+        <dd>It is a markup languages</dd>
+        <dd>It is used for presentation purpose</dd>
+        
+        <dt>CSS</dt>
+        <dd>It is styling languages</dd>
+        <dt>JAVASCRIPT</dt>
+        <dd>It is a scripting Languages</dd>
+
+    </dl> -->
+    <fieldset >
+        <legend class="personal-details">Personal details</legend>
+    <dl>
+        <dt>FIRST NAME</dt>
+        <dd>Some name</dd>
+        <dt>Last Name</dt>
+        <dd>Some name</dd>
+        <dt>Age</dt>
+        <dd>Some Age</dd>
+    </dl>
+</fieldset>
+<fieldset>
+    <legend class="contact-details">Contact Details</legend>
+    <dl>
+        <dt>City</dt>
+        <dd>SomeCity</dd>
+        <dt>State</dt>
+        <dd>SomeState</dd>
+        <dt>PostalCode</dt>
+        <dd>SomePostalCOde</dd>
+    </dl>
+</fieldset>
+
+    <!-- <nav>
+        <dl>
+            <dt>ELECTRONICS</dt>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dd>a</dd>
+            <dt>Student</dt>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dd>b</dd>
+            <dt>Class</dt>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+            <dd>c</dd>
+        </dl>
+    </nav> -->
+</body>
+</html>
