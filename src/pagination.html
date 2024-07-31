@@ -12,7 +12,30 @@
         }
         li{
             margin-right: 20px;
+            border: 1px solid black;
+            text-align: center;
+            width: 30px;
+            height: 20px;
+            padding: 5px;
+            border-radius: 50%;
+            color: cyan;
+            background-color: black;
         }
+        li:hover{
+            color: red;
+            background-color: cyan;
+            cursor: pointer;
+
+        }
+        .blocked{
+            color: red;
+            background-color: white;
+
+        }
+        .blocked:hover{
+            cursor: not-allowed;
+        }
+
     </style>
 </head>
 <body>
@@ -20,13 +43,13 @@
         <li>&laquo;</li>
         <li>1</li>
         <li>2</li>
-        <li>3</li>
+        <li class="blocked">3</li>
         <li>4</li>
         <li>5</li>
         <li>6</li>
         <li>7</li>
         <li>8</li>
-        <li>...</li>
+        <li>...</li> 
         <li>&raquo;</li>
     </ul>
 </body>
