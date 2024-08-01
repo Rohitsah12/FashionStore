@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landkit</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-around;
+        }
+        .tittle{
+            color: #335EEA;
+        }
+        nav{
+            margin-top: 35px;
+        }
+        .buynow{
+            color: white;
+            background-color: #335EEA;
+            width: 100px;
+            height: 50px;
+            margin-top: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        nav span{
+            padding: 20px;
+            color: gray;
+            font-size: large;
+        }
+        main div{
+            margin-left: 140px;
+        }
+        .landkit-welcome{
+            margin-top: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 48px;
+            color: #161C2D
+            }
+                .blue{
+                    color:#335EEA;
+                }
+        .desc{
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .desc-II{
+            margin-top: -8px;
+        }
+        .btn-pages{
+            height: 50px;
+            width: 170px;
+            background-color: #335EEA;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 17px;
+        }
+        .btn-docs {
+            background-color: #335EEA1A;
+            color: #335EEA;
+            padding: 13px 20px;
+            font-size: 17px;
+            border: none;
+            border-radius: 4px;
+        }
+        .bi{
+            margin-left: 7px;
+        }
+        .pic{
+            margin-top: -70px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+    <div><h2 class="tittle">Landkit.</h2></div>
+
+        <nav>
+            <span>Landing</span>
+            <span>Pages</span>
+            <span>Account</span>
+            <span>Documentation</span>
+        </nav>
+
+    <div class="buynow">
+        <h3>Buy now</h3>
+    </div>
+</header>
+<section>
+    <main>
+        <img src="../public/images/workflow.jpg" alt="can't display" height="400" width="600" align="right" class="pic">
+        
+        <div class="landkit-welcome">
+            <p>Welcome to <span class="blue">Landkit.</span><br>
+            Develop anything.</p>
+        </div>
+        <div class="desc">
+            <p>Build a beautiful, modern website with flexible</p>
+                <p class="desc-II">Bootstrap components built from scratch.</p>
+        </div>
+        <div>
+            <button class="btn-pages">View all pages<span class="bi bi-arrow-right"></span></button>
+            <button class="btn-docs">Documentation</button>
+        </div>
+    </main>
+</section>
+</body>
+</html>
