@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment</title>
-</head>
-<body>
-       
-</body>
+    <style>
+        body{
+            background-color: black;
+        }
+        nav{
+            color: black;
+            background-color: gray;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            width: 200px;
+        }
+        nav div{
+            height: 10px;
+            padding: 20px;
+            background-color: lightblue;
+            margin: 20px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: darkred;
+        }
+        main{
+            height: 500px;
+            overflow: auto;
+        }
+        iframe{
+            overflow: hidden;
+        }
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <div><a href="#mobile" >Mobile</a></div>
+        <div><a href="#women">Womens</a></div>
+        <div><a href="#men">Mens</a></div>
+        <div><a href="#kid">Kids</a></div>
+      </nav>
+      <main>
+        <iframe src="../src/mens.html" id="men"></iframe>
+        <iframe src="../src/kidscard.html" id="kid"></iframe>
+        <iframe src="../src/womens.html" id="women"></iframe>
+        <iframe src="../src/mobile.html" id="mobile"></iframe>
+      </main>
+    </section>
+  </body>
 </html>
