@@ -11,17 +11,97 @@
         background-color: black;
         color: white;
     }
+    .id-img{
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    span sup{
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        margin-left: -8px;
+    }
+    .search-box{
+        display: inline-block;
+        height: 30px;
+        width: 400px;
+        background-color: rgb(18,18,18);
+        border: 1px solid rgb(48,48,48);
+        border-radius: 20px;
+    }
+    .bi-search{
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        border: 1px solid rgb(48,48,48);
+        margin-top:-50px;
+        text-align: center;
+    }
+    .first{
+        margin-left: 15px;
+        font-size: 25px;
+        margin-top: 7px;
+    }
+    .bi-list{
+        margin-right: 20px;
+    }
+    .bi-youtube{
+        color: rgb(255,0,0);
+    }
+    a{
+        color: white;
+    }
+    .third span{
+        margin-right: 10px;
+    }
+    nav div{
+        margin-left: 15px;
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+   .bi-house{
+        margin-top: 40px;
+   }
 </style>
 <body>
     <header>
-        <div>
-            <span class="bi bi-three-line-horizontal"></span>
-            <span></span>
-            <span></span>
+        <div class="first">
+            <span class="bi bi-list"></span>
+            <span class="bi bi-youtube"></span>
+            <span>YOUTUBE</span>
         </div>
-        <div></div>
-        <div></div>
+        <div class="second">
+            <span class="search-box"></span>
+            <span class="bi bi-search"></span>
+            <span class="bi bi-mic-fill"></span>
+        </div>
+        <div class="third">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell"><span class="seven"><sup>7</sup></span></span>
+            <span><img src="../public/images/a1.jpg" alt="" class="id-img"></span>
+        </div>
     </header>
+    <section>
+        <nav>
+            <div>
+                <a href="" class="bi bi-house"></a>
+            </div>
+            <div>
+                <a href="" class="bi bi-youtube"></a>
+            </div>
+            <div>
+                <a href="" class="bi bi-bag"></a>
+            </div>
+            <div>
+                <a href="" class="bi bi-2-square"></a>
+            </div>
+        </nav>
+    </section>
     
 </body>
 </html>
