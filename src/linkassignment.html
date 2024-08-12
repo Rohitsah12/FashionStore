@@ -19,6 +19,7 @@
         iframe{
             width: 100%;
             height: 100%;
+            border: none;
         }
         nav{
             width: 200px;
@@ -43,16 +44,13 @@
   <body>
     <section>
       <nav>
-        <div><a href="#mobile" >Mobile</a></div>
-        <div><a href="#women">Womens</a></div>
-        <div><a href="#men">Mens</a></div>
-        <div><a href="#kid">Kids</a></div>
+        <div><a href="./kidscard.html" target="frame" >Kids</a></div>
+        <div><a href="./mens.html" target="frame" >Mens</a></div>
+        <div><a href="./womens.html" target="frame" >Womens</a></div>
+        <div><a href="./mobile.html" target="frame" >Mobile</a></div>
       </nav>
       <main>
-        <iframe src="../src/mens.html" id="men"></iframe>
-        <iframe src="../src/kidscard.html" id="kid"></iframe>
-        <iframe src="../src/womens.html" id="women"></iframe>
-        <iframe src="../src/mobile.html" id="mobile"></iframe>
+        <iframe src="" width="1100px" height="650px" name="frame"></iframe>
       </main>
     </section>
   </body>
