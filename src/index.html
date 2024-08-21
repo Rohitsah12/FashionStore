@@ -11,7 +11,7 @@
         header{
             display: flex;
             justify-content: space-around;
-            font-size: 10px;
+            font-size: 15px;
             font-family:Arial;  
             padding: 20px;
         }
@@ -25,6 +25,8 @@
             width:10px;
             text-align: center;
             border-radius: 50%;
+            margin-left: -5px;
+            margin-top:-0px;
         }
 
         nav span{
@@ -40,6 +42,7 @@
             padding: 6px;
         }
         section{
+            margin-top: 10px;
             height: 450px;
         }
         
@@ -83,6 +86,62 @@
             color: gray;
             padding: 3px;
         }
+        .womenfashion{
+            background-image: url(../public/images/womenfashion.jpeg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+            &:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
+
+        }
+        .menfashion{
+            background-image: url(../public/images/men1.jpeg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+            &:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
+            
+        }
+        .kidfashion{
+            background-image: url(../public/images/kids1.jpeg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+            &:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+        main{
+            height: 400px;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            grid-gap: 2px;
+        }
+        .card-header{
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px black;
+            margin-bottom: 80px;
+        }
+        button{
+            border: none;
+            padding: 15px;
+            margin-top: 80px;
+        }
     </style>
 </head>
 <body>
@@ -115,7 +174,39 @@
     <span>⚡HAPPY HOLIDAY DEALS ON EVERYTHING ⚡</span>
 </article>
 <section>
-
+            <main>
+                <div class="womenfashion">
+                    <div class="card">
+                        <div class="card-header">
+                            WOMEN
+                        </div>
+                        <div class="card-footer">
+                            <button>Shop Women <span class="bi bi-arrow-right"></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menfashion">
+                    <div class="card">
+                        <div class="card-header">
+                            MEN
+                        </div>
+                        <div class="card-footer">
+                            <button>Shop Men <span class="bi bi-arrow-right"></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="kidfashion">
+                    <div class="card">
+                        <div class="card-header">
+                            KIDS
+                        </div>
+                        <div class="card-footer">
+                            <button>Shop Kids <span class="bi bi-arrow-right"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
 </section>
 <!-- <footer>
     <div class="text-footer-head">Want Style Ideas and Treats?</div>

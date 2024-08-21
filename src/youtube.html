@@ -1,107 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube</title>
-</head>
-<link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-<style>
-    body{
-        background-color: black;
-        color: white;
+  </head>
+  <link
+    rel="stylesheet"
+    href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+  />
+  <style>
+    body {
+      background-color: rgb(15, 15, 15);
+      color: white;
     }
-    .id-img{
-        height: 32px;
-        width: 32px;
-        border-radius: 50%;
+    .id-img {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
     }
-    header{
-        display: flex;
-        justify-content: space-between;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    span sup{
-        background-color: red;
-        color: white;
-        border-radius: 50%;
-        margin-left: -8px;
+    .second {
+      display: flex;
     }
-    .search-box{
-        display: inline-block;
-        height: 30px;
-        width: 400px;
-        background-color: rgb(18,18,18);
-        border: 1px solid rgb(48,48,48);
-        border-radius: 20px;
+    span sup {
+      background-color: red;
+      color: white;
+      border-radius: 50%;
+      margin-left: -8px;
     }
-    .bi-search{
-        display: inline-block;
-        height: 30px;
-        width: 30px;
-        border: 1px solid rgb(48,48,48);
-        margin-top:-50px;
-        text-align: center;
+    .search-box {
+      display: inline-block;
+      height: 30px;
+      width: 450px;
+      background-color: rgb(18, 18, 18);
+      border: 1px solid rgb(48, 48, 48);
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
     }
-    .first{
-        margin-left: 15px;
-        font-size: 25px;
-        margin-top: 7px;
+    .bi-search {
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      border: 1px solid rgb(48, 48, 48);
+      text-align: center;
     }
-    .bi-list{
-        margin-right: 20px;
+    .first {
+      margin-left: 15px;
+      font-size: 25px;
+      margin-top: 7px;
     }
-    .bi-youtube{
-        color: rgb(255,0,0);
+    .bi-list {
+      margin-right: 20px;
     }
-    a{
-        color: white;
+    .bi-youtube {
+      color: rgb(255, 0, 0);
     }
-    .third span{
-        margin-right: 10px;
+    a {
+      color: white;
     }
-    nav div{
-        margin-left: 15px;
-        font-size: 25px;
-        margin-bottom: 40px;
+    .third span {
+      margin-right: 10px;
+      font-size: 25px;
     }
-   .bi-house{
-        margin-top: 40px;
-   }
-</style>
-<body>
+    nav div {
+      margin-left: 15px;
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
+    .bi-house {
+      margin-top: 40px;
+    }
+    .bi-mic-fill {
+      border: 1px soild gray;
+      background-color: gray;
+      height: 25px;
+      width: 25px;
+      margin-left: 20px;
+      text-align: center;
+      padding: 5px;
+      border-radius: 50%;
+    }
+    .profile {
+      color: white;
+      background-color: green;
+      border-radius: 50%;
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+    }
+    .btn {
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+    section {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr 11fr;
+    }
+    .banner {
+      width: 100%;
+      border-radius: 20px;
+    }
+    .logo {
+      border-radius: 50%;
+    }
+    .logo-aside {
+      margin-left: 190px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .logo-aside h1 {
+      font-size: 40px;
+      color: rgb(241, 241, 241);
+    }
+    .logo-aside-second-line {
+      color: #727172;
+      margin-top: -30px;
+    }
+    .logo-aside-third-line {
+      margin-top: 5px;
+      color: #727172;
+    }
+    .more {
+      color: white;
+    }
+    .logo-aside-fourth-line {
+      margin-top: 5px;
+      color: #30a6ff;
+    }
+    button {
+      background-color: #272727;
+      border: none;
+      margin-left: -20px;
+      color: white;
+      height: 35px;
+      text-align: center;
+      border-radius: 20px;
+      margin-top: 5px;
+    }
+    button span {
+      margin-left: 8px;
+      font-weight: bold;
+    }
+    .nav {
+      margin-top: 20px;
+      border-bottom: 1px solid #aaaaaa;  
+    }
+    nav span {
+      margin-right: -30px;
+      font-size: 20px;
+      color: #aaaaaa;
+      margin-left: 50px;
+    }
+    .searching {
+      border: none;
+    }
+    .first-video{
+        margin-left: 50px;
+        margin-top: 20px;
+        
+    }
+    iframe{
+      border: none;
+      border-radius:20px ;
+    }
+  </style>
+  <body>
     <header>
-        <div class="first">
-            <span class="bi bi-list"></span>
-            <span class="bi bi-youtube"></span>
-            <span>YOUTUBE</span>
+      <div class="first">
+        <span class="bi bi-list"></span>
+        <span class="bi bi-youtube"></span>
+        <span>YOUTUBE</span>
+      </div>
+      <div class="second">
+        <div class="search-box">
+          <span class="btn">Search</span>
+          <span class="bi bi-search"></span>
         </div>
-        <div class="second">
-            <span class="search-box"></span>
-            <span class="bi bi-search"></span>
-            <span class="bi bi-mic-fill"></span>
-        </div>
-        <div class="third">
-            <span class="bi bi-camera-video"></span>
-            <span class="bi bi-bell"><span class="seven"><sup>7</sup></span></span>
-            <span><img src="../public/images/a1.jpg" alt="" class="id-img"></span>
-        </div>
+        <div class="bi bi-mic-fill"></div>
+      </div>
+      <div class="third">
+        <span class="bi bi-camera-video"></span>
+        <span class="bi bi-bell"
+          ><span class="seven"><sup>7</sup></span></span
+        >
+        <span class="profile">R</span>
+      </div>
     </header>
     <section>
-        <nav>
-            <div>
-                <a href="" class="bi bi-house"></a>
+      <nav>
+        <div>
+          <a href="" class="bi bi-house"></a>
+        </div>
+        <div>
+          <a href="" class="bi bi-play-circle"></a>
+        </div>
+        <div>
+          <a href="" class="bi bi-collection-play"></a>
+        </div>
+        <div>
+          <a href="" class="bi bi-play-btn"></a>
+        </div>
+      </nav>
+      <main>
+        <div>
+          <img
+            src="../public/images/yt-ioi-banner.png"
+            class="banner"
+            height="150px"
+          />
+        </div>
+        <div>
+          <img src="../public/images/pwlogo.jpg" class="logo" align="left" />
+          <div class="logo-aside">
+            <h1>PW Institute of Innovation</h1>
+            <div class="logo-aside-second-line">
+              <span>@PW-IOI</span> <span>7.23k subscribers</span>
+              <span>157 videos</span>
             </div>
-            <div>
-                <a href="" class="bi bi-youtube"></a>
+            <div class="logo-aside-third-line">
+              <span>Shaping Futures, Empowering Innovators! 🚀 </span
+              ><span class="more">...more</span>
             </div>
-            <div>
-                <a href="" class="bi bi-bag"></a>
+            <div class="logo-aside-fourth-line">
+              <span
+                >pwioi.com/?utm_source=Youtube&utm_medium=Social&utm_campaign=Org</span
+              ><span class="more">... and 8 more links </span>
             </div>
-            <div>
-                <a href="" class="bi bi-2-square"></a>
+            <div class="btn">
+              <button>
+                <span class="bi bi-bell"></span><span>Subscribed</span
+                ><span class="bi bi-chevron-down"></span>
+              </button>
             </div>
-        </nav>
+          </div>
+        </div>
+        <div class="nav">
+          <nav>
+            <span>Home</span>
+            <span>Videos</span>
+            <span>Shorts</span>
+            <span>Playlist</span>
+            <span>Community</span>
+            <span class="bi bi-search searching"></span>
+          </nav>
+        </div>
+        <div class="first-video">
+          <div>
+          <iframe width="260" height="215" src="https://www.youtube.com/embed/scX-jneH0hU?si=TXVjeVfljJX52G-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="first-video-aside">
+
+                         </div>
+        </div>
+      </main>
     </section>
-    
-</body>
+  </body>
 </html>
