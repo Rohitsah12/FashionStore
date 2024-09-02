@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <!-- Quantifiers: <input type="text" pattern="[a-zA-Z]{1,}@[a-zA-Z]{5}\.[a-z]{2,}" name="txtColor"> -->
+    <!-- Quantifiers: <input type="text" pattern="^\+91[0-9]{10}$" name="txtColor"> -->
+    <!-- Quantifiers: <input type="text" pattern="(^\+91[0-9]{10}$) | (^\+91\s[0-9]{3}-\d{4}-\d{3}$)" name="txtColor"> -->
+
+    <!-- Write a pattern to validate US mobile format number?
+    <input type="text" pattern="(^\+\(1\)\(425\)\s[0-9]{3}-\d{4})" name="txtName"> -->
+
+    <!-- Write a pattern to validate UK mobile format number?
+    <input type="text" pattern="(^\+\(44\)\(20\)\d{4}\s\d{4})" name="txtName"> -->
+
+    
+    <!-- Write a pattern to validate IFSC code of SBI bank?
+    <input type="text" pattern="(^SBI[0][0-9]{6})" name="txtName"> -->
+
+    <!-- Write a pattern to allow only alpha numeric with 4 to 15 chars but special characters not allowed<br>
+    <input type="text" pattern="[a-zA-Z0-9]{4,15}" name="txtName">  -->
+
+    <!-- Write a pattern to allow only alphabets with 4 to chars but special characters not allowed?<br>
+    <input type="text" pattern="[a-zA-Z]{4,15}" name="txtName">  -->  
+
+    <!-- Write a pattern for username starting with uppercase letters and can be 4 to 15 hars but special characters not allowed?<br>
+    <input type="text" pattern="[A-Z]{1}[a-zA-Z]{3,15}"> -->
+
+    <!-- write a pattern to allow only aplha numeric with _
+    <input type="text" pattern="(?=.*[A-Z])\w{4,15}"> -->
+
+    Write a pattern for username 4 to 15 chars with atleast one uppercase letter,lowercaseletters,number and special character?<br>
+    <input type="text" pattern="((?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@&#%])[a-zA-Z0-9!@&#%]{4,15})" name="txt">
+
+
+
+
+    <button>submit</button>
+  </form>
+</body>
+</html>
