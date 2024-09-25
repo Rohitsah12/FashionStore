@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        /* input:required+span{
+            display: inline;
+            color: red;
+        }
+        input:required{
+            border: 1px solid red;
+        }
+        input:optional+span{
+            display: none;
+        }
+        input:valid+span{
+            display: none;
+        }
+        input:valid{
+            border: 2px solid green;
+        }
+        input:valid~div{
+            display: none;
+        }
+        input:invalid~div{
+            display: block;
+            color: red;
+        } */
+        
+        /* textarea:disabled{
+            cursor: not-allowed;
+        }
+
+        .terms+span{
+            color: red;
+        }
+        .terms:checked+span{
+            color: green;
+        }
+        .terms~button{
+            display: none;
+        }
+        .terms:checked~button{
+            display: block;
+        } */
+        input+div{
+            display: none;
+        }
+        input:focus+div{
+            display: block;
+            color: rebeccapurple;
+        }
+        input::placeholder{
+            color: blue;
+            font-size: 12px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <!-- <dl>
+            <dt>UserName</dt>
+            <dd>
+                <input type="text" name="txtUsername" required><span>*</span>
+                <div>
+                    Username is required
+                </div>
+            </dd>
+            <dt>Password</dt>
+            <dd>
+                <input type="text" name="txtpwd" required><span>*</span>
+                <div>
+                    Password is required
+                </div>
+            </dd>
+            <dt>Age</dt>
+            <dd>
+                <input type="text" name="txtAge" required><span>*</span>
+                <div>
+                   Age is required
+                </div>
+            </dd>
+        </dl> -->
+        <!-- <dl>
+            <dt>Term and Service</dt>
+            <dd>
+                <textarea rows="5" cols="40" disabled>Terms and Conditions</textarea>
+            </dd>
+            <dd>
+                <input type="checkbox" class="terms"><span>I Accept</span>
+                <br><br>
+                <button class="btn btn-primary">Submit</button>
+            </dd>
+        </dl> -->
+
+
+        <form action="">
+            <dl class="m-2">
+                <dt>UserName</dt>
+                <dd>
+                    <input type="text" name="textUsername" placeholder="Enter username">
+                    <div>
+                        <span class="bi bi-info-circle"></span><span>Username in UPPERCASE</span>
+                    </div>
+                </dd>
+            </dl>
+        </form>
+    </form>
+</body>
+</html>
