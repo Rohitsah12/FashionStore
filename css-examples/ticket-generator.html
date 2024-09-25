@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      dl {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+      }
+      div {
+        height: 300px;
+        background-color: lightgray;
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+      dt {
+        font-weight: bold;
+      }
+    </style>
+
+    <style media="print">
+      dl {
+        display: grid;
+        grid-template-columns: 12fr;
+      }
+      
+      div {
+        height: 300px;
+        background-color: lightgray;
+        border: 2px solid black;
+        margin: 10px;
+      }
+      dt {
+        font-weight: bold;
+      }
+      marquee,button{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <marquee behavior="" direction=""
+        ><img src="../public/images/image.png" alt="" width="300" height="100"
+      /></marquee>
+      <h1 align="center">Train Ticket</h1>
+      <dl>
+        <dt>DepartureDate</dt>
+        <dd>26-09-2024</dd>
+        <dt>Departuretime</dt>
+        <dd>15:00</dd>
+      </dl>
+      <button>PrintTicket</button>
+    </div>
+  </body>
+</html>
