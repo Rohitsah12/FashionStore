@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <style>
+      .carousel-item{
+        height: 500px  ;
+      }
+      img {
+        width: 100vw;
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="carousel carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-theme="dark"
+      id="topBanner"
+    >
+      <div class="carousel-indicators">
+        <button
+          class="active"
+          data-bs-slide-to="0"
+          data-bs-target="#topBanner"
+        ></button>
+        <button data-bs-slide-to="1" data-bs-target="#topBanner"></button>
+        <button data-bs-slide-to="2" data-bs-target="#topBanner"></button>
+        <button data-bs-slide-to="3" data-bs-target="#topBanner"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="../public/images/a1.jpg" alt="" />
+        </div>
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="../public/images/a2.jpg" alt="" />
+        </div>
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="../public/images/a3.jpg" alt="" />
+        </div>
+        <div class="carousel-item d-flex justify-content-center align-items-center">
+          <div class="w-50 ">
+          <p>Register for more...</p>
+          
+              <form class="input-group">
+                  <input type="email" placeholder="Enter your email" class="form-control ">
+                  <button class="btn btn-warning">Get Started <span class="bi bi-chevron-right"></span></button>
+              </form>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        data-bs-target="#topBanner"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        data-bs-target="#topBanner"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
